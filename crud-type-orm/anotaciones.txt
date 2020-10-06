@@ -1,0 +1,2 @@
+SELECT query
+SELECT id, "firstName", "lastName" FROM public."user";  

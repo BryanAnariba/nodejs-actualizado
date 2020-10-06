@@ -1,0 +1,15 @@
+// Antes que todo instalar typeorm de manera global
+
+// Inicializar un proyecto de typeorm , en este caso la base de datos es postgres
+npx typeorm init --name fundamentos-con-postgre  --database postgres
+
+// Instalar dependencias
+npm install
+
+
+// Migraciones
+Generar una nueva migracion
+    npx ts-node ./node_modules/typeorm/cli.js migration:generate -n miPrimeramMigracion
+
+Correr o ejecutar la migracion
+    npx ts-node ./node_modules/typeorm/cli.js migration:run
